@@ -1,0 +1,26 @@
+<div class="control-group">
+  <label for="title" class="control-label">title</label>
+  <div class="controls">
+    <%- contentTag('input', step.title, {type:'text', class:'span6', name:'title'}) %>
+  </div>
+  <label for="title" class="control-label">To-Do for this step</label>
+  <div>
+    <%- selectTag(toDos, step.toDoId, {
+    name: 'toDoId'
+  , valueField: 'id'
+  , textField: 'title'
+   }); %>
+  </div>
+</div>
+<div class="control-group">
+  <label for="description" class="control-label">description</label>
+  <div class="controls">
+    <%- contentTag('textarea', step.description, {class: 'span6', name: 'description', rows: 10}) %>
+  </div>
+</div>
+<div class="control-group">
+  <label for="status" class="control-label">status</label>
+  <div class="controls">
+    <%- contentTag('input', step.status, {type:'text', class:'span6', name:'status'}) %>
+  </div>
+</div>

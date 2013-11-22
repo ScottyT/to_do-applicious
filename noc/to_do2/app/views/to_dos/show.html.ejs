@@ -1,0 +1,14 @@
+<div class="hero-unit">
+  <h2 class="title"><%= toDo.title %></h2>
+  <%- linkTo('Edit this toDo', editToDoPath(params.id), {class: 'btn pull-right'}); %>
+</div>
+
+<h3>Status: <%= toDo.status %></h3>
+
+<h3>Steps</h3>
+<% steps.forEach(function (step) { %>
+<h4>
+  <%- linkTo(step.title, {controller: 'steps', action: 'show', id: step.id}l); %>
+</h4>
+<% }); %>
+

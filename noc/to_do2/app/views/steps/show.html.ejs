@@ -1,0 +1,17 @@
+<div class="hero-unit">
+  <h2 class="title"><%= step.title %></h2>
+  <%- linkTo('Edit this step', editStepPath(params.id), {class: 'btn pull-right'}); %>
+</div>
+
+<h2>Step Properties</h2>
+<% for(var i in step) { -%>
+<% if(i !== 'saved') { -%>
+<div class="row list-item">
+  <div class="span4">
+    <h3><%= i %></h3>
+  </div>
+  <div class="span8">
+    <h3><i class="icon-list-alt"></i><span class="<%= i %>"><%= step[i] %></span></h3>
+  </div>
+</div>
+<% } -%><% } -%>

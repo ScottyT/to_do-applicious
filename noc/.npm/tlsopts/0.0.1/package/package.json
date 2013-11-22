@@ -1,0 +1,25 @@
+{
+  "name": "tlsopts",
+  "version": "0.0.1",
+  "author": "Larz Conwell",
+  "license": "mit",
+  "description": "Make TLS configuration simple",
+  "scripts": {
+    "test": "node ./test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/larzconwell/tlsopts.git"
+  },
+  "keywords": [
+    "tls",
+    "configuration",
+    "options"
+  ],
+  "dependencies": {
+    "async": "~0.2.9"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  }
+}
